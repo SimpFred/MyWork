@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv"> 
+    <head>
+        <title>Förslag - SmartaRecept</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <meta name="description" content="Lämna in ett receptförslag och dela med dig av en maträtt genom att fylla i formuläret.">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="../index.html">SmartaRecept</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="searchPage.html">Sök recept</a></li>
+                <li><a href="foodSustainability.html">Hållbarhet</a></li>
+                <li><a href="suggestions.html" class="active">Receptförslag</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <!-- I have chosen not to post the content of the form anywhere as it does not feel necessary -->
+        <section id="formSection">
+            <header>
+              <h2>Receptförslag</h2>
+              <p>Fyll i formuläret för att lägga til ditt recept.</p>
+            </header>
+            <p>* = Obligatoriskt</p>
+            <form action="../html/thanks.html">
+              <fieldset>
+                <legend></legend>
+              <p>
+                  <label for="FirstName">Förnamn*:</label>
+                  <input id="FirstName" type="text" name="firstname" required >
+              </p>
+              <p>
+                  <label for="LastName">Efternamn*:</label>
+                  <input id="LastName" type="text" name="lastname" required>
+              </p>
+              <p>
+                  <label for="Email">E-mail*:</label>
+                  <input id="Email" type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+              </p>
+              <p>
+                  <label for="NameOfCourse">Namn på rätten*:</label>
+                  <input id="NameOfCourse" type="text" name="nameOfCourse" required>
+              </p>
+              <p>
+                  <label for="Ingridients">Tilllagningstid*:</label>    
+                  <select id="Ingridients" name="ingridients" required>
+                    <option value="">Välj en tid</option>
+                    <option value="teen">10</option>
+                    <option value="twenty">20</option>
+                    <option value="thirty">30</option>
+                    <option value="forty">40</option>
+                    <option value="fifty">50</option>
+                    <option value="sixty">60</option>
+                    <option value="sixtyplus">60+</option>
+                  </select>
+              </p>
+              <p>
+                  <label for="Description">Ge en kort beskrivning av maträtten*:</label>
+                  <textarea id="Description" rows="5" cols="20" name="description" required></textarea>
+              </p>
+              <p>
+                  <input type="reset" value="Rensa">
+                  <input type="submit" value="Lämna in">
+              </p>
+            </fieldset>
+            </form>
+            
+          </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li>info@smartaRecept.se</li>
+                <li>&copy; SmartaRecept.se</li>
+                <li>Design: HTML5 UP</li>
+            </ul>
+        </footer>
+    </body>
+</html>
